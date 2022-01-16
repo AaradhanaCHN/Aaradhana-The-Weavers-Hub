@@ -47,6 +47,11 @@ function indexBoot(){
         } else {
             document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
         }
+        if(window.screen.width < window.screen.height){
+            document.getElementById("footer").style.position = "absolute";
+        } else{
+            document.getElementById("footer").style.position = "static";
+        }
     }, 1);
 }
 function catBoot(){
