@@ -11,27 +11,37 @@ body{
 }
 #grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding-top: 70px;
-    padding-bottom: 370px;
+    margin-top: 140px;
+    margin-bottom: 150px;
 }
 footer, header{
     margin: 0px;
-    padding-bottom: 7px;
     padding-top: 7px;
-    background-color: darkgray;
     width: 100%;
-    line-height: 1.5;
+
 }
 header{
+    padding-bottom: 7px;
+    background-color: darkgray;
     position: fixed;
     top: 0;
+}
+footer{
+    padding-bottom: 14px;
+    color: whitesmoke;
+    position: static;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(75, 75, 75);
+    margin-bottom: -100;
+    margin-top: auto;
 }
 #cat-container{
     height: 100%;
     margin: 0;
 }
-/* Copyright Aaradhana Chennai 2022 */
+#business-email{
+    display:inline-block;
+    margin-right: 7px;
+}
+/* Copyright 2022 © Aaradhana Chennai Private Limited. All rights reserved. */

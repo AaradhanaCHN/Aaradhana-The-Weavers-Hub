@@ -38,7 +38,18 @@ function cat10(){
     localStorage.setItem("category", "10");
     window.location="category.html"
 }
+function indexBoot(){
+    var myInterval = setInterval(function() {
+        if (window.screen.width < 350){
+            document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr";
+        } else if (window.screen.width < 1050){
+            document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr";
+        } else {
+            document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+        }
+    }, 1);
+}
 function catBoot(){
     document.getElementById("cat").innerHTML=localStorage.getItem("category");
 }
-/* Copyright Aaradhana Chennai 2022 */
+/* Copyright 2022 © Aaradhana Chennai Private Limited. All rights reserved. */
