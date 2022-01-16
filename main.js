@@ -49,8 +49,12 @@ function indexBoot(){
         }
         if(window.screen.width < window.screen.height){
             document.getElementById("footer").style.position = "absolute";
+            document.getElementById("body").style.fontSize = "26px";
+            document.getElementById("business-email-btn").style.fontSize = "28px";
         } else{
             document.getElementById("footer").style.position = "static";
+            document.getElementById("body").style.fontSize = "14px";
+            document.getElementById("business-email-btn").style.fontSize = "16px";
         }
     }, 1);
 }
