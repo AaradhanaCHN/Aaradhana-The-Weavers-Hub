@@ -38,7 +38,7 @@ function cat10(){
     localStorage.setItem("category", "10");
     window.location="category.html"
 }
-function indexBoot(){
+function boot(){
     var myInterval = setInterval(function() {
         if (window.screen.width < 350){
             document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr";
@@ -47,12 +47,16 @@ function indexBoot(){
         } else {
             document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
         }
-        if(window.screen.width < window.screen.height){
+        if(window.screen.width*1.75 < window.screen.height){
             document.getElementById("footer").style.position = "absolute";
+            document.getElementById("h3-txt").style.fontSize = "30px";
+            document.getElementById("cat-h3-txt").style.color = "red";
             document.getElementById("body").style.fontSize = "26px";
             document.getElementById("business-email-btn").style.fontSize = "28px";
         } else{
             document.getElementById("footer").style.position = "static";
+            document.getElementById("h3-txt").style.fontSize = "19px";
+            document.getElementById("cat-h3-txt").style.fontSize = "19px";
             document.getElementById("body").style.fontSize = "14px";
             document.getElementById("business-email-btn").style.fontSize = "16px";
         }
