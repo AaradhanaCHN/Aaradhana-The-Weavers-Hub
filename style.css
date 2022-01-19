@@ -2,6 +2,10 @@ img{
     width: 250px;
     height: 230px;
     cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+img:hover { 
+    transform: scale(1.1); 
 }
 body{
     margin: 0;
@@ -26,7 +30,7 @@ header{
     position: fixed;
     top: 0;
 }
-#footer, #cat-footer{
+#footer{
     padding-bottom: 14px;
     color: whitesmoke;
     left: 0;
@@ -34,6 +38,7 @@ header{
     background-color: rgb(75, 75, 75);
     margin-bottom: -100;
     margin-top: auto;
+    display: inline-block;
 }
 #cat-container{
     height: 100%;
@@ -45,5 +50,8 @@ header{
 }
 h3{
     font-size: 19px;
+}
+#business-email-btn{
+    color: black;
 }
 /* Copyright 2022 © Aaradhana Chennai Private Limited. All rights reserved. */
