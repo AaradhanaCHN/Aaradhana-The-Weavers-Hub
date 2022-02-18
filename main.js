@@ -51,6 +51,7 @@ function catBootTrig() {
 function boot() {
     var page = window.location.pathname.split("/").pop();
     var int1 = setInterval(function() {
+        console.log(page);
         if (window.screen.width < 350) {
             document.getElementById("body").style.fontSize = "26px";
             document.getElementById("h3-txt").style.fontSize = "31px";
