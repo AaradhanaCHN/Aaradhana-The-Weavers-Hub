@@ -51,26 +51,25 @@ function catBootTrig() {
 function boot() {
     var page = window.location.pathname.split("/").pop();
     var int1 = setInterval(function() {
-        console.log(page);
         if (window.screen.width < 350) {
             document.getElementById("body").style.fontSize = "26px";
             document.getElementById("h3-txt").style.fontSize = "31px";
             document.getElementById("business-email-btn").style.fontSize = "28px";
-            if(page == "index.html"){
+            if(page == ""){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr";
             }
         } else if (window.screen.width < 1050) {
             document.getElementById("body").style.fontSize = "20px";
             document.getElementById("h3-txt").style.fontSize = "25px";
             document.getElementById("business-email-btn").style.fontSize = "22px";
-            if(page == "index.html"){
+            if(page == ""){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr";
             }
         } else {
             document.getElementById("body").style.fontSize = "14px";
             document.getElementById("h3-txt").style.fontSize = "19px";
             document.getElementById("business-email-btn").style.fontSize = "16px";
-            if(page == "index.html"){
+            if(page == ""){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
             }
         }
