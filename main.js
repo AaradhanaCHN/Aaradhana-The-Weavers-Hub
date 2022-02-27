@@ -1,6 +1,3 @@
-gapi.load('auth2', function() {
-    gapi.auth2.init();
-});
 function cat1() {
     localStorage.setItem("category", "1");
     window.location="category.html"
@@ -51,25 +48,25 @@ function catBootTrig() {
 function boot() {
     var page = window.location.pathname.split("/").pop();
     var int1 = setInterval(function() {
-        if (window.screen.width < 350) {
+        if (window.screen.width <= 350) {
             document.getElementById("body").style.fontSize = "26px";
             document.getElementById("h3-txt").style.fontSize = "31px";
             document.getElementById("business-email-btn").style.fontSize = "28px";
-            if(page == ""){
+            if((page == "")||(page == "index.html")){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr";
             }
-        } else if (window.screen.width < 1050) {
+        } else if (window.screen.width <= 1100) {
             document.getElementById("body").style.fontSize = "20px";
             document.getElementById("h3-txt").style.fontSize = "25px";
             document.getElementById("business-email-btn").style.fontSize = "22px";
-            if(page == ""){
+            if((page == "")||(page == "index.html")){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr";
             }
         } else {
             document.getElementById("body").style.fontSize = "14px";
             document.getElementById("h3-txt").style.fontSize = "19px";
             document.getElementById("business-email-btn").style.fontSize = "16px";
-            if(page == ""){
+            if((page == "")||(page == "index.html")){
                 document.getElementById("grid-container").style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
             }
         }
